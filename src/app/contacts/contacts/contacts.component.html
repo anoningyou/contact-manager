@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="contacts-list">
+        <div *ngFor="let contact of ((contacts|async)??[]); let i= index"
+        [class.even]="i%2==0" 
+        [class.odd]="i%2!=0">
+        
+        <app-contact-item
+            [contact]="contact"
+            (onRemove)="removeContact($event)"
+        ></app-contact-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+{
+  "uuid": "8e3e160b-7020-4a12-80a7-01981215a8c4",
+  "lastMigration": 24,
+  "name": "Contacts api mooks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3003,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "cb169231-68e2-461f-92d6-7d112a0aff61",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "contacts",
+      "responses": [
+        {
+          "uuid": "cbc09eaa-9d06-4ed8-8f28-36b1b958b681",
+          "body": "[\n{\"id\":\"e0fc3a13-8d85-c515-1f15-9a8e67fe9388\",\"name\":\"Tom\",\"phoneNumber\":\"15616\",\"eMail\":\"tom@gmail.com\"},\n{\"id\":\"1bbc7403-1f1d-69de-f30c-d9f3e043ff13\",\"name\":\"Bob\",\"phoneNumber\":\"213131\",\"eMail\":\"bob@gmail.com\"},\n{\"id\":\"691cbdaf-6a9a-1e4c-bb63-7fb58f7ffe39\",\"name\":\"Bill\",\"phoneNumber\":\"312313123\",\"eMail\":\"bill@gmail.com\"}, \n{\"id\":\"eb5bbfef-19f7-4ec1-d481-9070f1bff128\",\"name\":\"Alex\",\"phoneNumber\":\"4123123123\",\"eMail\":\"alex@gmail.com\"}, \n{\"id\":\"b747b605-c69f-f530-aa9a-f26f030d4c8a\",\"name\":\"Ann\",\"phoneNumber\":\"531231\",\"eMail\":\"ann@gmail.com\"}, \n{\"id\":\"5a169ee3-4d49-ae12-559b-d74b676627a8\",\"name\":\"Alice\",\"phoneNumber\":\"62313\",\"eMail\":\"alice@gmail.com\"}, \n{\"id\":\"c9e9da84-a049-50d7-92b9-ffe4d7919338\",\"name\":\"Barbara\",\"phoneNumber\":\"7123123123\",\"eMail\":\"barbara@gmail.com\"}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2e253685-698d-445c-85aa-49d2294ffcfe",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "contacts/:id",
+      "responses": [
+        {
+          "uuid": "7ac643ff-4279-45ec-973a-41037ac2a6c8",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

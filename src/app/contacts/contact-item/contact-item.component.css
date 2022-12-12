@@ -1,0 +1,23 @@
+
+.contact-item{
+    display: flex;
+    height: 40px;
+    
+}
+.contact-property{
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+.contact-name{
+    width: 33%;
+}
+.contact-phone{
+    width: 33%;
+}
+.contact-email{
+    width: 33%;
+}
+.remove-button{
+    width: 50px;
+}
